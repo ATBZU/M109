@@ -1,5 +1,7 @@
 services:
   webserver:
     build: .
+    image: nginx-website
+    container_name: container-nginx-compose
     ports:
       - "8080:80"
